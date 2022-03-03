@@ -23,6 +23,24 @@ header {
   background-color: var(--primary);
 }
 
+footer {
+  display: flex; 
+  padding: 50px; 
+  text-align: center; 
+}
+
+footer span {
+  display: flex; 
+  margin: auto; 
+  padding: 20px; 
+}
+
+footer span a {
+  text-decoration: none;
+  color: var(--lean-in);
+  cursor: pointer;
+}
+
 nav {
   display: flex; 
   justify-content: space-between;

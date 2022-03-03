@@ -3,10 +3,12 @@ import Navigation from '../Navigation';
 
 function Header() {
     return( 
-        <header>
-            <h2>Welcome to Austin's portfolio!</h2>
+        <>
+            <header>
+                <h2>Austin Coats</h2>
             <Navigation></Navigation>
-        </header> 
+            </header> 
+        </>
     )
 }
 
