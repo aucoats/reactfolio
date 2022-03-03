@@ -1,7 +1,10 @@
 import './App.css';
 import About from './components/About';
 import Header from './components/Header'; 
-import Footer from './components/Footer'; 
+import Footer from './components/Footer';
+import Projects from './components/Projects'; 
+import Contact from './components/Contact'; 
+import Resume from './components/Resume';  
 import { useState } from 'react';
 
 function App() {
@@ -12,6 +15,8 @@ function App() {
 
   const [currentPage, setCurrentPage] = useState(page[0])
 
+  console.log(currentPage);
+
 
   return (
     <> 
@@ -20,7 +25,22 @@ function App() {
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
         ></Header>
-      <About></About>
+      { currentPage === 'about' ?
+        <About></About> :
+        <></>
+        }
+      { currentPage === 'projects' ?
+        <Projects></Projects> :
+        <></>
+        }
+      { currentPage === 'contact' ?
+        <Contact></Contact> :
+        <></>
+        }
+      { currentPage === 'resume' ?
+        <Resume></Resume> :
+        <></>
+        }
       <Footer></Footer>
     </>
   );

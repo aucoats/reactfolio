@@ -80,6 +80,26 @@ main {
   font-size: 1.2vw;
 }
 
+.projects {
+  background-color: var(--peach);
+  text-align: center;
+  margin: 0 100px;
+  display: flex; 
+  justify-content: space-around;
+}
+
+.projects a {
+  text-decoration: none; 
+  color: var(--lean-in);
+  cursor: pointer;
+}
+
+.projects .img img {
+  max-width: 40%;
+  max-height: 40%;
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
