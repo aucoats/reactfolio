@@ -3,7 +3,9 @@ import React from 'react';
 
 function About() {
     return( 
-        <section id="about-me">
+        <section className="about-me">
+                <img src={require(`../../assets/img/avatar.png`)}>
+                </img>
                 <p>
                     Hello! My name is Austin. I am currently working as an industrial hemp retail specialist,
                     but I have put this portfolio together to showcase my web development prowess for your viewing 

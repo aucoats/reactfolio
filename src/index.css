@@ -18,12 +18,21 @@ body {
 }
 
 header {
+  background-image: url(../src/assets/img/hero.jpg);
+  background-size: cover;
   padding: 0; 
-  margin: 0px 50px;
-  background-color: var(--primary);
+  margin: 0;
+}
+
+header h2 {
+  margin: 0;
+  padding: 50px;
+  color: var(--lean-in); 
 }
 
 footer {
+  background-color: var(--peach);
+  margin: 0 100px;
   display: flex; 
   padding: 50px; 
   text-align: center; 
@@ -42,18 +51,35 @@ footer span a {
 }
 
 nav {
+  margin: 0 100px;
   display: flex; 
-  justify-content: space-between;
-  margin: 0 -50px;
-  padding: 10px;
-  width: min-content;
-  background-color: var(--compliment);
+  justify-content: space-around;
+  width: fit-content;
 }
 
 main {
   display: flex; 
+}
+
+.about-me {
+  background-color: var(--peach);
+  text-align: center;
+  margin: 0 100px;
+  display: flex; 
+  justify-content: space-around;
   
 }
+
+.about-me img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.about-me p {
+  color: var(--lean-in);
+  font-size: 1.2vw;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
