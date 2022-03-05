@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/reactfolio/static/css/main.0c7ec7a5.css",
+    "main.js": "/reactfolio/static/js/main.1d9c3889.js",
+    "static/js/787.512dd3f2.chunk.js": "/reactfolio/static/js/787.512dd3f2.chunk.js",
+    "static/media/hero.jpg": "/reactfolio/static/media/hero.985e1378f7227e0b7e70.jpg",
+    "static/media/avatar.png": "/reactfolio/static/media/avatar.80491815b747d010cb15.png",
+    "static/media/treaddit.png": "/reactfolio/static/media/treaddit.e38e29140143037c7e61.png",
+    "index.html": "/reactfolio/index.html",
+    "main.0c7ec7a5.css.map": "/reactfolio/static/css/main.0c7ec7a5.css.map",
+    "main.1d9c3889.js.map": "/reactfolio/static/js/main.1d9c3889.js.map",
+    "787.512dd3f2.chunk.js.map": "/reactfolio/static/js/787.512dd3f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c7ec7a5.css",
+    "static/js/main.1d9c3889.js"
+  ]
+}
