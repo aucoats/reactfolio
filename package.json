@@ -1,7 +1,7 @@
 {
   "name": "reactfolio",
-  "homepage": "http://aucoats.github.io/reactfolio",
   "version": "0.1.0",
+  "homepage": "https://aucoats.github.io/reactfolio/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.8.1",

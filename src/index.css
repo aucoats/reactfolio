@@ -67,7 +67,6 @@ main {
   margin: 0 100px;
   display: flex; 
   justify-content: space-around;
-  
 }
 
 .about-me img {
@@ -97,6 +96,65 @@ main {
 .projects .img img {
   max-width: 40%;
   max-height: 40%;
+}
+
+.contact {
+  background-color: var(--peach);
+  margin: 0 100px;
+  display: flex; 
+}
+
+.contact form {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-buttons {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact button {
+  text-align: center;
+  margin: 20px; 
+  padding: 20px;
+}
+
+.form-component {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-component div {
+  margin: 50px;
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+}
+
+.form-component div label {
+  flex-basis: 200px;
+}
+
+.form-component div input {
+  flex-basis: 200px; 
+}
+
+.message-form {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.message-form label {
+  flex-basis: 200px;
+}
+
+.message-form textarea {
+ flex-basis: 200px;
 }
 
 
