@@ -78,20 +78,6 @@ function Projects() {
             </Card>
             ))}
         </section>
-              // <div className="card">
-            //         <div className="project-title">
-            //             <h1>{project.name}</h1>
-            //         </div>
-            //         {/* <div className="img">
-            //             <img src={require(`../../assets/img/${project.image}`)} />
-            //         </div> */}
-            //          <div className="project-content">
-            //              <span>
-            //                 <a href={project.deployed}>Deployed App</a> <br></br>
-            //                 <a href={project.repo}><GitHubIcon/></a>
-            //              </span>
-            //          </div>
-            //      </div>
     )
 }
 

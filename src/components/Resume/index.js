@@ -1,8 +1,36 @@
 import React from "react";
 
+// resume link https://drive.google.com/file/d/1o8knnWTYBYaJM-nDPLOmOsOWvnqOKJDP/view?usp=sharing
+
 function Resume() {
+    const skills = [
+        'React', 
+        'Express.js',
+        'Node.js',
+        'MongoDB',
+        'NoSQL', 
+        'GitHub', 
+        'JavaScript',
+        'CSS', 
+        'Agile Development', 
+        'DRY Methods',
+        'OOP', 
+        'MVC Paradigm',
+        'Progressive Web Applications'
+    ]
+
     return(
-        <p>This is a resume page.</p>
+        <section className="resume">
+            <a href={require(`../../assets/files/resume.pdf`)} target="_blank">My resume lives here.</a>
+            <div>
+                <h1>Skills</h1>
+                <ul>
+                    {skills.map(skill => {
+                        return <li>{skill}</li>
+                    })}
+                </ul>
+            </div>
+        </section>
     )
 }
 
