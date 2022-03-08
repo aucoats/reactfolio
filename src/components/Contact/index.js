@@ -23,7 +23,7 @@ function Contact() {
                 <div className="contact-buttons">
                     <button type="submit">Submit</button>
                     <a href='mailto:austincoats72@gmail.com'>
-                        <button>Email me!</button>    
+                        <h3>Email me!</h3>    
                     </a>
                 </div>
             </form>

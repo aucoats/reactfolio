@@ -54,6 +54,10 @@ footer span a {
   cursor: pointer;
 }
 
+footer span a:hover {
+  color: var(--compliment);
+}
+
 nav {
   margin: 0 100px;
   display: flex; 
@@ -87,7 +91,9 @@ main {
   background-color: var(--peach);
   text-align: center;
   margin: 0 100px;
+  padding: 10px 10px;
   display: flex; 
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -100,6 +106,11 @@ main {
 .projects .img img {
   max-width: 40%;
   max-height: 40%;
+}
+
+.project-content {
+  background-image: url(../src/assets/img/treaddit.png);
+  width: 200px; 
 }
 
 .contact {
@@ -123,6 +134,7 @@ main {
 
 .contact button {
   text-align: center;
+  cursor: pointer;
   font-weight: bold;
   font-size: x-large;
   color: beige;
@@ -131,6 +143,15 @@ main {
   background-image: linear-gradient(92.88deg, var(--lean-in) 9.16%, var(--primary) 43.89%,  #FF00FF 64.72%);
   border-radius: 8px;
   border-style: none;
+}
+
+.contact a {
+  text-decoration: none;
+  color: var(--lean-in);
+}
+
+.contact a:hover {
+  color: var(--compliment);
 }
 
 .form-component {
@@ -249,23 +270,54 @@ code {
 @media screen and (max-width: 768px) {
   nav {
     justify-content: space-between; 
+    margin: 0;
   }
 
   .about-me {
     background-color: var(--peach);
     text-align: center;
-    margin: 0 100px;
+    margin: 0px; 
     display: flex; 
     justify-content: space-around;
     flex-direction: column;
   }
 
+  .about-me p {
+    font-size: medium; 
+  }
   .about-me img {
     margin: auto;
     text-align: center;
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 100px;
+    max-height: 100px;
   }
 
-}
+  footer {
+    font-size: x-small;
+    margin: 0;
+    background-color: var(--peach);
+    display: flex; 
+    padding: 25px; 
+    text-align: center; 
+  }
 
+  .projects {
+    margin: 0; 
+  }
+  .contact {
+    margin: 0;
+  }
+  .contact form {
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .contact-buttons {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+}
