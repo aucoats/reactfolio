@@ -362,4 +362,48 @@ code {
     justify-content: center;
     align-items: center;
   } 
+
+  .resume {
+    background-color: var(--peach);
+    text-align: center;
+    margin: 0;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around;
+  }
+  
+  .resume a {
+    text-decoration: none;
+    flex-basis: 100%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 2px;
+    background-color: var(--lean-in);
+    color: var(--peach); 
+    cursor: pointer;
+  }
+  
+  .resume h1 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px; 
+    color: var(--lean-in);
+  }
+  
+  .resume ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .resume li {
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+    color: var(--lean-in);
+    flex-basis: 50%;
+  }
 }

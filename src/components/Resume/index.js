@@ -12,11 +12,12 @@ function Resume() {
         'GitHub', 
         'JavaScript',
         'CSS', 
+        'Media Queries',
         'Agile Development', 
         'DRY Methods',
         'OOP', 
         'MVC Paradigm',
-        'Progressive Web Applications'
+        'Progressive Web Applications',
     ]
 
     return(
