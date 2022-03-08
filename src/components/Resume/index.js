@@ -1,7 +1,5 @@
 import React from "react";
 
-// resume link https://drive.google.com/file/d/1o8knnWTYBYaJM-nDPLOmOsOWvnqOKJDP/view?usp=sharing
-
 function Resume() {
     const skills = [
         'React', 
