@@ -6,6 +6,16 @@
   --tangy: rgb(244, 157, 110);
 }
 
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
 body {
   background: var(--primary);
   margin: 0;
@@ -25,6 +35,7 @@ header {
 }
 
 header h2 {
+  animation: 1s ease-out 0s 1 slideInFromRight;
   font-family: 'Roboto'; 
   font-size: 3rem;
   font-style: italic;
@@ -80,11 +91,14 @@ main {
 .about-me img {
   max-width: 300px;
   max-height: 300px;
+  border-radius: 15px;
+  margin: 30px;
 }
 
 .about-me p {
   color: var(--lean-in);
   font-size: 1.2vw;
+  margin: 2vw;
 }
 
 .projects {

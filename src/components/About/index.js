@@ -4,7 +4,8 @@ import React from 'react';
 function About() {
     return( 
         <section className="about-me">
-                <img src={require(`../../assets/img/avatar.jpg`)}>
+                <img src={require(`../../assets/img/avatar.jpg`)}
+                    alt="Austin and his pup Kashi near a river">
                 </img>
                 <p>
                     Hi, I'm Austin. Perched next to me there is Kashi. We both like taking long walks on a nice trail, but only one of us is a full-stack web developer (it would probably be Kashi if it weren't for the thumb situation). 

@@ -72,8 +72,8 @@ function Projects() {
                     bgcolor: 'var(--lean-in)', 
                     color: 'var(--peach)'
                 }}>
-                    <a href={project.repo} target="_blank"><Button size="small"><GitHubIcon sx={{ color: 'var(--peach)'}}></GitHubIcon></Button></a>
-                    <a href={project.deployed} target="_blank"><Button size="small"><LaunchIcon sx={{ color: 'var(--peach)'}}></LaunchIcon></Button></a>
+                    <a href={project.repo} target="_blank" rel="noreferrer"><Button size="small"><GitHubIcon sx={{ color: 'var(--peach)'}}></GitHubIcon></Button></a>
+                    <a href={project.deployed} target="_blank" rel="noreferrer"><Button size="small"><LaunchIcon sx={{ color: 'var(--peach)'}}></LaunchIcon></Button></a>
                 </CardActions>
             </Card>
             ))}

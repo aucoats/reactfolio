@@ -1,13 +1,17 @@
 import React from 'react'; 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn'; 
+import HorizontalSplitIcon from '@mui/icons-material/HorizontalSplit';
+
 
 
 function Footer() {
     return(
         <footer> 
-            <span><a href="https://github.com/aucoats" target="_blank"><div><GitHubIcon /></div>aucoats</a></span>
-            <span><a href="https://www.linkedin.com/in/aucoats" target="_blank"><div><LinkedInIcon /></div>Austin Coats</a></span>
+            
+            <span><a href="https://github.com/aucoats" target="_blank" rel="noreferrer"><div><GitHubIcon sx={{ fontSize: 50 }} /></div></a></span>
+            <span><a href="https://www.linkedin.com/in/aucoats" target="_blank" rel="noreferrer"><div><LinkedInIcon sx={{ fontSize: 50 }} /></div></a></span>
+            <span><a href="https://stackoverflow.com/users/16932811/aucodes" target="_blank" rel="noreferrer"><div><HorizontalSplitIcon sx={{ fontSize: 50}} /></div></a></span>
         </footer> 
     )
 }
