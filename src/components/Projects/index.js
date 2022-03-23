@@ -12,6 +12,12 @@ function Projects() {
 
     const projects = [
         {
+            name: 'Social Rolls', 
+            deployed: 'https://socialrolls.herokuapp.com/',
+            repo: 'https://github.com/KrisSmith7/roll-initiative',
+            image: 'socialrolls.jpg'
+        },
+        {
             name: 'Treaddit', 
             deployed: 'https://treaddit.herokuapp.com/',
             repo: 'https://github.com/aucoats/treaddit',
@@ -28,12 +34,6 @@ function Projects() {
             deployed: 'https://aucoats.github.io/weatherdash-challenge/',
             repo: 'https://github.com/aucoats/weatherdash-challenge',
             image: 'weatherdash.jpg'
-        },
-        {
-            name: 'Code Quiz', 
-            deployed: 'https://aucoats.github.io/codequiz-challenge/',
-            repo: 'https://github.com/aucoats/codequiz-challenge',
-            image: 'codequiz.jpg'
         },
         {
             name: 'Workday Planner', 
