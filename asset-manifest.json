@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/reactfolio/static/css/main.85a7bf51.css",
-    "main.js": "/reactfolio/static/js/main.09fcbd46.js",
+    "main.js": "/reactfolio/static/js/main.5e61a373.js",
     "static/js/787.512dd3f2.chunk.js": "/reactfolio/static/js/787.512dd3f2.chunk.js",
     "static/media/avatar.jpg": "/reactfolio/static/media/avatar.194fe4901991b7467ec8.jpg",
     "static/media/hero.jpg": "/reactfolio/static/media/hero.985e1378f7227e0b7e70.jpg",
     "static/media/cryptoquotes.jpg": "/reactfolio/static/media/cryptoquotes.177606987a9a0b9a634d.jpg",
     "static/media/workday.png": "/reactfolio/static/media/workday.1ba966a1847809da6039.png",
+    "static/media/socialrolls.jpg": "/reactfolio/static/media/socialrolls.62e47f65d252e5b36797.jpg",
     "static/media/weatherdash.jpg": "/reactfolio/static/media/weatherdash.60da66b180759d7ed2e4.jpg",
     "static/media/codequiz.jpg": "/reactfolio/static/media/codequiz.787564b96787c1bb5606.jpg",
     "static/media/resume.pdf": "/reactfolio/static/media/resume.ab827ded76c137eddde0.pdf",
     "static/media/treaddit.png": "/reactfolio/static/media/treaddit.e38e29140143037c7e61.png",
     "index.html": "/reactfolio/index.html",
     "main.85a7bf51.css.map": "/reactfolio/static/css/main.85a7bf51.css.map",
-    "main.09fcbd46.js.map": "/reactfolio/static/js/main.09fcbd46.js.map",
+    "main.5e61a373.js.map": "/reactfolio/static/js/main.5e61a373.js.map",
     "787.512dd3f2.chunk.js.map": "/reactfolio/static/js/787.512dd3f2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.85a7bf51.css",
-    "static/js/main.09fcbd46.js"
+    "static/js/main.5e61a373.js"
   ]
 }
