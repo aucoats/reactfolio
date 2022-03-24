@@ -8,4 +8,6 @@ A better take on my personal portfolio and a chance to flex my React skills. Use
 ## Deployed
 https://aucoats.github.io/reactfolio/
 
+![Austin's Reactfolio](./src/assets/img/deployed.jpg)
+
 
