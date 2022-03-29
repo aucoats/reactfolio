@@ -14,30 +14,35 @@ function Projects() {
         {
             name: 'Social Rolls', 
             deployed: 'https://socialrolls.herokuapp.com/',
+            description: 'Social app in which users can keep track of characters and campaigns! Collaborative effort that utilizes the full MERN stack and GraphQL.',
             repo: 'https://github.com/KrisSmith7/roll-initiative',
             image: 'socialrolls.jpg'
         },
         {
             name: 'Treaddit', 
             deployed: 'https://treaddit.herokuapp.com/',
+            description: 'Trail sharing app for users who love to travel and share! Group project using MVC paradigm, handlebars, MySQL and Express.js.',
             repo: 'https://github.com/aucoats/treaddit',
             image: 'treaddit.png'
         },
         {
             name: 'CryptoQuotes', 
             deployed: 'https://krissmith7.github.io/cryptoquotes/',
+            description: 'Fun cryptocurrecy group project in which users can generate inspirational quotes based on crypto performance. Third party API calls included!',
             repo: 'https://github.com/KrisSmith7/cryptoquotes',
             image: 'cryptoquotes.jpg'
         },
         {
             name: 'Weather Dashboard',
             deployed: 'https://aucoats.github.io/weatherdash-challenge/',
+            description: 'Weather app created so that users can search weather by city and receive a 5-day forecast. Utilizes third party API calls, conditional rendering, and saved searches.',
             repo: 'https://github.com/aucoats/weatherdash-challenge',
             image: 'weatherdash.jpg'
         },
         {
             name: 'Workday Planner', 
             deployed: 'https://aucoats.github.io/workscheduler-challenge/', 
+            description: 'Planner that allows you to update seemlessly. Time slot colors change depending on current time. Javascript, jQuery, Moment.js and local storage.',
             repo: 'https://github.com/aucoats/workscheduler-challenge',
             image: 'workday.png'
         }
@@ -46,23 +51,28 @@ function Projects() {
     return(
         <section className="projects">
             {projects.map(project => (
-            <Card sx={{ maxWidth:300, 
-                flexBasis: '100%',
+            
+            <Card sx={{ maxWidth: 500, 
+                minWidth: 400,
+                flexBasis: 100,
                 marginY: '20px',
-                marginX: '70px' }}>
+                marginX: '70px' }} className="show">
                 <CardMedia
                     component="img"
-                    height="150"
+                    height="200"
                     src={require(`../../assets/img/${project.image}`)}
                     alt={project.name}
                 />
                 <CardContent sx={{
                     bgcolor: 'var(--primary)', 
                     color: 'var(--lean-in)',
-                    textAlign: 'left'
+                    textAlign: 'left',
                 }}> 
-                    <Typography variant="h5" component="div"> 
+                    <Typography variant="h" component="div"> 
                     {project.name}
+                    </Typography>
+                    <Typography variant="body2" className="hide" component="div">
+                        {project.description}
                     </Typography>
                 </CardContent>
                 <CardActions sx={{

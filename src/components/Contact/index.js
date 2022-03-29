@@ -3,7 +3,7 @@ import React from 'react';
 function Contact() {
     return(
         <main className="contact">
-            <form>
+            {/* <form>
                 <div className="form-component">
                     <div>
                         <label for="name">Name: </label>
@@ -22,11 +22,13 @@ function Contact() {
                 </div>
                 <div className="contact-buttons">
                     <button type="submit">Submit</button>
-                    <a href='mailto:austincoats72@gmail.com'>
-                        <h3>Email me!</h3>    
-                    </a>
                 </div>
-            </form>
+            </form> */}
+            {/* linked in badge */}
+            {/* <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="aucoats" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/aucoats?trk=profile-badge">Austin Coats</a></div> */}
+            <a href='mailto:austincoats72@gmail.com' class="bob-on-hover">
+                <h3>Email me!</h3>    
+            </a>
         </main>
     )
 }

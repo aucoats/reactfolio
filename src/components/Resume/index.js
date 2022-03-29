@@ -6,6 +6,7 @@ function Resume() {
         'Express.js',
         'Node.js',
         'MongoDB',
+        'GraphQL',
         'NoSQL', 
         'GitHub', 
         'JavaScript',
@@ -20,12 +21,12 @@ function Resume() {
 
     return(
         <section className="resume">
-            <a href={require(`../../assets/files/resume.pdf`)} target="_blank">My resume lives here.</a>
+            <a href={require(`../../assets/files/resume.pdf`)} class="bob-on-hover" target="_blank">My resume lives here.</a>
             <div>
                 <h1>Skills</h1>
                 <ul>
                     {skills.map(skill => {
-                        return <li>{skill}</li>
+                        return <li className="grow">{skill}</li>
                     })}
                 </ul>
             </div>
