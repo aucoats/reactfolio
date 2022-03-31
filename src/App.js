@@ -15,9 +15,6 @@ function App() {
 
   const [currentPage, setCurrentPage] = useState(page[0])
 
-  console.log(currentPage);
-
-
   return (
     <> 
       <Header
