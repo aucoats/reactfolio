@@ -20,7 +20,7 @@ function Resume() {
     ]
 
     return(
-        <section className="resume">
+        <section id="resume" className="resume">
             <a href={require(`../../assets/files/resume.pdf`)} class="bob-on-hover" target="_blank">My resume lives here.</a>
             <div>
                 <h1>Skills</h1>

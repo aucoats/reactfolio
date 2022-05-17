@@ -26,7 +26,7 @@ function App() {
       <Projects></Projects>
       <Contact></Contact>
       <Resume></Resume>
-
+      <Footer></Footer>
 
 
 
@@ -52,7 +52,7 @@ function App() {
         <Resume></Resume> :
         <></>
         } */}
-      <Footer></Footer>
+      
     </>
   );
 }

@@ -19,6 +19,12 @@
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.5); }
 
+.nav-grow { transition: all .5s ease-in-out; }
+.nav-grow:hover { transform: scale(1.1); }
+
+.hover-color:hover {
+  mix-blend-mode: difference;
+}
 
 body {
   background-image: url(../src/assets/img/hero.jpg);
@@ -63,6 +69,7 @@ header div .header-contacts button {
 
 .header-contacts button a {
   color: var(--peach);
+  mix-blend-mode:hard-light;
 }
 
 header h2 {
@@ -77,7 +84,8 @@ header h2 {
 }
 
 header h2 span {
-  color: var(--peach);
+  color: white;
+  mix-blend-mode: difference;
 }
 
 header h3 {
@@ -122,8 +130,30 @@ footer span a:hover {
 nav {
   margin: 0 100px;
   display: flex; 
-  justify-content: space-around;
-  width: fit-content;
+  justify-content: center;
+  /* style needed if using old layout 
+  width: fit-content; */
+}
+
+/* 
+  Saving for corner border idea? 
+  .button-wrapper {
+  border: 1px solid; 
+  padding: 0; 
+  margin: 0; 
+} */
+
+.nav-button {
+  cursor: pointer; 
+  font-family: Roboto;
+  font-weight: bold;
+  margin: 1rem;
+  width: 5rem;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--peach); 
+  mix-blend-mode: hard-light;
 }
 
 main {
@@ -132,6 +162,7 @@ main {
 
 .about-me {
   background-color: var(--peach);
+  border-radius: 20px;
   text-align: center;
   margin: 0 100px;
   display: flex; 
@@ -165,8 +196,23 @@ main {
   mix-blend-mode: difference; 
 }
 
+.contact-header {
+  background-color: transparent; 
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Roboto'; 
+  font-size: 3em;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0;
+  padding: 3rem 3rem 0px 3rem;
+  color:white;
+  mix-blend-mode: difference; 
+}
+
 .projects {
   background-color: var(--peach);
+  border-radius: 20px;
   text-align: center;
   margin: 0 100px;
   padding: 10px 10px;
@@ -194,6 +240,7 @@ main {
 .contact {
   background-color: var(--peach);
   margin: 0 100px;
+  border-radius: 20px;
   display: flex; 
 }
 
@@ -265,6 +312,7 @@ main {
 
 .resume {
   background-color: var(--peach);
+  border-radius: 20px;
   text-align: center;
   margin: 0 100px;
   display: flex; 

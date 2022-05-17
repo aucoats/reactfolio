@@ -11,16 +11,50 @@ function Navigation(props) {
 
     return( 
         <nav> 
-            { currentPage === 'about' ?
+            <Link to="about-me"
+            isDynamic={true}
+            ignoreCancelEvents={true}
+            smooth={true}
+            duration={750}
+            offset={-50}>                    
+                <div className='button-wrapper nav-grow'><button className='nav-button nav-grow'>About</button></div>
+            </Link>
+            <Link to="projects-header"
+            isDynamic={true}
+            ignoreCancelEvents={true}
+            smooth={true}
+            duration={750}
+            offset={-50}>                    
+               <div className='button-wrapper nav-grow'><button className='nav-button nav-grow'>Projects</button></div>
+            </Link>
+            <Link to="resume"
+            isDynamic={true}
+            ignoreCancelEvents={true}
+            smooth={true}
+            duration={750}
+            offset={-50}>                    
+                <div className='button-wrapper nav-grow'><button className='nav-button nav-grow'>Resume</button></div>
+            </Link>
+            <Link to="contact"
+            isDynamic={true}
+            ignoreCancelEvents={true}
+            smooth={true}
+            duration={750}
+            offset={-50}>                    
+                <div className='button-wrapper nav-grow'><button className='nav-button nav-grow'>Contact</button></div>
+            </Link>
+            
+            {/* { currentPage === 'about' ?
                 <Link to="about-me"
                 isDynamic={true}
                 ignoreCancelEvents={true}
                 smooth={true}
                 duration={500}
                 offset={50}><Button variant="contained"
+                className='nav-button'
                     sx={{
-                        backgroundColor: 'var(--peach)',
-                        color: 'var(--lean-in)',
+                        // backgroundColor: 'var(--peach)',
+                        // color: 'var(--lean-in)',
                     }}
                     id="about"
                     onClick={(e) => {
@@ -120,7 +154,7 @@ function Navigation(props) {
                     onClick={(e) => {
                         setCurrentPage(e.target.id)
                     }}>Resume</Button>
-                }
+                } */}
         </nav> 
     )
 }
