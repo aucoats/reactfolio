@@ -3,7 +3,7 @@ import React from 'react';
 
 function About() {
     return( 
-        <section className="about-me">
+        <section id="about-me" className="about-me">
                 <img src={require(`../../assets/img/avatar.jpg`)}
                     alt="Austin and his pup Kashi near a river">
                 </img>

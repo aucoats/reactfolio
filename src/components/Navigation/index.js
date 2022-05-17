@@ -12,10 +12,12 @@ function Navigation(props) {
     return( 
         <nav> 
             { currentPage === 'about' ?
-                <Link to="projects"
-                    smooth={true}
-                    duration={500}>
-                    <Button variant="contained"
+                <Link to="about-me"
+                isDynamic={true}
+                ignoreCancelEvents={true}
+                smooth={true}
+                duration={500}
+                offset={50}><Button variant="contained"
                     sx={{
                         backgroundColor: 'var(--peach)',
                         color: 'var(--lean-in)',
@@ -24,9 +26,14 @@ function Navigation(props) {
                     onClick={(e) => {
                         setCurrentPage(e.target.id)
                     }}>About</Button>
-                    </Link> 
+                </Link>
                     :
-                <Link to="projects">
+           <Link to="about-me"
+                isDynamic={true}
+                ignoreCancelEvents={true}
+                smooth={true}
+                duration={500}
+                offset={50}>
                     <Button variant="contained"
                     sx={{
                         backgroundColor: 'var(--primary)',
@@ -36,10 +43,16 @@ function Navigation(props) {
                     onClick={(e) => {
                         setCurrentPage(e.target.id)
                     }}>About</Button>
-                    </Link>
+                </Link>
                 }
             { currentPage === "projects" ?
-                <Button variant="contained"
+                <Link to="projects-header"
+                isDynamic={true}
+                ignoreCancelEvents={true}
+                smooth={true}
+                duration={500}
+                offset={50}>
+                    <Button variant="contained"
                     sx={{
                         backgroundColor: 'var(--peach)',
                         color: 'var(--lean-in)',
@@ -48,16 +61,23 @@ function Navigation(props) {
                     onClick={(e) => {
                         setCurrentPage(e.target.id)
                     }}>Projects</Button>
+                </Link>
                     :
-                <Button variant="contained"
-                    sx={{
-                        backgroundColor: 'var(--primary)',
-                        color: 'var(--lean-in)',
-                    }}
-                    id="projects"
-                    onClick={(e) => {
-                        setCurrentPage(e.target.id)
-                    }}>Projects</Button>
+                <Link to="projects"
+                isDynamic={true}
+                ignoreCancelEvents={true}
+                smooth={true}
+                duration={500}>
+                    <Button variant="contained"
+                        sx={{
+                            backgroundColor: 'var(--primary)',
+                            color: 'var(--lean-in)',
+                        }}
+                        id="projects"
+                        onClick={(e) => {
+                            setCurrentPage(e.target.id)
+                        }}>Projects</Button>
+                </Link>
                 }
             { currentPage === 'contact' ?
                 <Button variant="contained"

@@ -22,6 +22,17 @@ function App() {
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
         ></Header>
+      <About></About>
+      <Projects></Projects>
+      <Contact></Contact>
+      <Resume></Resume>
+
+
+
+
+      { 
+      /*
+        CODE FROM INITIAL ITERATION 
       { currentPage === 'about' ?
         <>
         <About></About>
@@ -33,14 +44,14 @@ function App() {
         <Projects></Projects> :
         <></>
         } */}
-      { currentPage === 'contact' ?
+      {/* { currentPage === 'contact' ?
         <Contact></Contact> :
         <></>
         }
       { currentPage === 'resume' ?
         <Resume></Resume> :
         <></>
-        }
+        } */}
       <Footer></Footer>
     </>
   );

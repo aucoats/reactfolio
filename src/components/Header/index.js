@@ -24,9 +24,9 @@ function Header(props) {
                             onMouseLeave={() => setFullName('Austin')}>Hi, I'm <span>{fullName}</span>.</h2>
                         {/* <h3>I'm a <span>web developer</span>.</h3> */}
                         <div className='header-contacts'>
-                            <button><a className="grow" href="https://github.com/aucoats" target="_blank" rel="noreferrer"><GitHubIcon sx={{ fontSize: 35 }} /></a></button>
-                            <button><a className="grow" href="https://www.linkedin.com/in/aucoats" target="_blank" rel="noreferrer"><LinkedInIcon sx={{ fontSize: 35 }} /></a></button>
-                            <button><a className="grow" href="https://stackoverflow.com/users/16932811/aucodes" target="_blank" rel="noreferrer"><HorizontalSplitIcon sx={{ fontSize: 35 }} /></a></button>
+                            <button><a className="grow" href="https://github.com/aucoats" target="_blank" rel="noreferrer"><div className='grow'><GitHubIcon sx={{ fontSize: 35 }} /></div></a></button>
+                            <button><a className="grow" href="https://www.linkedin.com/in/aucoats" target="_blank" rel="noreferrer"><div className='grow'><LinkedInIcon sx={{ fontSize: 35 }} /></div></a></button>
+                            <button><a className="grow" href="https://stackoverflow.com/users/16932811/aucodes" target="_blank" rel="noreferrer"><div className='grow'><HorizontalSplitIcon sx={{ fontSize: 35 }} /></div></a></button>
                         </div>
                     </div>
                 <Navigation page={page}

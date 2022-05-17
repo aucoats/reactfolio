@@ -49,7 +49,9 @@ function Projects() {
     ]
 
     return(
-        <section id="projects" className="projects">
+        <>
+        <h1 className='projects-header' id="projects-header">Projects</h1>
+        <section className="projects">
             {projects.map(project => (
             
             <Card sx={{ maxWidth: 500, 
@@ -88,6 +90,7 @@ function Projects() {
             </Card>
             ))}
         </section>
+        </>
     )
 }
 
