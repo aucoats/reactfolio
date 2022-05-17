@@ -23,13 +23,16 @@ function App() {
         setCurrentPage={setCurrentPage}
         ></Header>
       { currentPage === 'about' ?
-        <About></About> :
+        <>
+        <About></About>
+        <Projects></Projects>
+        </> :
         <></>
         }
-      { currentPage === 'projects' ?
+      {/* { currentPage === 'projects' ?
         <Projects></Projects> :
         <></>
-        }
+        } */}
       { currentPage === 'contact' ?
         <Contact></Contact> :
         <></>

@@ -49,7 +49,7 @@ function Projects() {
     ]
 
     return(
-        <section className="projects">
+        <section id="projects" className="projects">
             {projects.map(project => (
             
             <Card sx={{ maxWidth: 500, 

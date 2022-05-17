@@ -15,9 +15,16 @@
   }
 }
 
+/* grow on hover */
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
 
 body {
-  background: var(--primary);
+  background-image: url(../src/assets/img/hero.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  /* background: var(--primary); */
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Roboto', 'Oxygen',
@@ -29,10 +36,34 @@ body {
 
 header {
   background-image: url(../src/assets/img/hero.jpg);
+  background-attachment: fixed;
   background-size: cover;
   padding: 0; 
   margin: 0;
   text-align: center;
+}
+
+header div {
+  display: inline-flex;
+}
+
+header div .header-contacts {
+  margin: 0;
+  position: absolute; 
+  font-size: 3rem;
+  top: 3rem; 
+  right: 3rem; 
+}
+
+header div .header-contacts button {
+ margin: 2px; 
+ padding: 3px;  
+ background-color: transparent;
+ border: none;
+}
+
+.header-contacts button a {
+  color: var(--peach);
 }
 
 header h2 {
@@ -42,7 +73,7 @@ header h2 {
   font-style: italic;
   font-weight: bold;
   margin: 0;
-  padding: 50px 50px 0 50px;
+  padding: 3rem 3rem 0px 3rem;
   color: var(--lean-in); 
 }
 
@@ -281,9 +312,6 @@ main {
   display: block;
 } */
 
-/* grow on hover */
-.grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
 
 /* bob on hover */
 @-webkit-keyframes bob-on-hover {
