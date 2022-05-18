@@ -9,9 +9,8 @@ function Footer() {
     return(
         <footer> 
             
-            <span><a className="grow" href="https://github.com/aucoats" target="_blank" rel="noreferrer"><div><GitHubIcon sx={{ fontSize: 50 }} /></div></a></span>
-            <span><a className="grow" href="https://www.linkedin.com/in/aucoats" target="_blank" rel="noreferrer"><div><LinkedInIcon sx={{ fontSize: 50 }} /></div></a></span>
-            <span><a className="grow" href="https://stackoverflow.com/users/16932811/aucodes" target="_blank" rel="noreferrer"><div><HorizontalSplitIcon sx={{ fontSize: 50}} /></div></a></span>
+            {/* <span><a className="grow" href="https://github.com/aucoats" target="_blank" rel="noreferrer"><div><GitHubIcon sx={{ fontSize: 50 }} /></div></a></span>
+            <span><a className="grow" href="https://www.linkedin.com/in/aucoats" target="_blank" rel="noreferrer"><div><LinkedInIcon sx={{ fontSize: 50 }} /></div></a></span> */}
         </footer> 
     )
 }

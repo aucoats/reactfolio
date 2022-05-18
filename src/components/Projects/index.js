@@ -28,7 +28,7 @@ function Projects() {
         {
             name: 'CryptoQuotes', 
             deployed: 'https://krissmith7.github.io/cryptoquotes/',
-            description: 'Fun cryptocurrecy group project in which users can generate inspirational quotes based on crypto performance. Third party API calls included!',
+            description: 'Fun cryptocurrecy group project in which users can generate inspirational quotes based on crypto performance. Third party API calls, Bootstrap, and JavaScript included!',
             repo: 'https://github.com/KrisSmith7/cryptoquotes',
             image: 'cryptoquotes.jpg'
         },
@@ -42,7 +42,7 @@ function Projects() {
         {
             name: 'Workday Planner', 
             deployed: 'https://aucoats.github.io/workscheduler-challenge/', 
-            description: 'Planner that allows you to update seemlessly. Time slot colors change depending on current time. Javascript, jQuery, Moment.js and local storage.',
+            description: 'Planner that allows you to update seemlessly. Time slot colors change depending on current time. JavaScript, jQuery, Moment.js and local storage.',
             repo: 'https://github.com/aucoats/workscheduler-challenge',
             image: 'workday.png'
         }
@@ -55,7 +55,7 @@ function Projects() {
             {projects.map(project => (
             
             <Card sx={{ maxWidth: 500, 
-                minWidth: 400,
+                minWidth: 350,
                 flexBasis: 100,
                 marginY: '20px',
                 marginX: '70px' }} className="show">

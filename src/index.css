@@ -196,6 +196,20 @@ main {
   mix-blend-mode: difference; 
 }
 
+.resume-header {
+  background-color: transparent; 
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Roboto'; 
+  font-size: 3em;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0;
+  padding: 3rem 3rem 0px 3rem;
+  color:white;
+  mix-blend-mode: difference; 
+}
+
 .contact-header {
   background-color: transparent; 
   text-align: center;
@@ -238,76 +252,17 @@ main {
 }
 
 .contact {
-  background-color: var(--peach);
-  margin: 0 100px;
+  /* background-color: var(--peach); */
+  margin: 3rem;
   border-radius: 20px;
   display: flex; 
+  justify-content: center;
 }
 
-
-/*
-  Styles for button that I eventually deleted but don't want to lose
-   .contact button {
-  text-align: center;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: x-large;
-  color: beige;
-  margin: 20px; 
-  padding: 20px;
-  background-image: linear-gradient(92.88deg, var(--lean-in) 9.16%, var(--primary) 43.89%,  #FF00FF 64.72%);
-  border-radius: 8px;
-  border-style: none;
-} */
-
-.contact a {
-  text-align: center;
-  text-decoration: none;
-  flex-basis: 100%;
-  padding: 5px;
-  margin: 10px;
-  border-radius: 2px;
-  background-color: var(--lean-in);
+.contact-buttons {
+  background-color: transparent;
   color: var(--peach); 
-  cursor: pointer;
-}
-
-.contact a:hover {
-  color: var(--compliment);
-}
-
-.form-component {
-  display: flex; 
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.form-component div {
-  margin: 50px;
-  display: flex;
-  flex-basis: 50%;
-  justify-content: center;
-}
-
-.form-component div label {
-  flex-basis: 200px;
-}
-
-.form-component div input {
-  flex-basis: 200px; 
-}
-
-.message-form {
-  display: flex;
-  flex-basis: 100%;
-}
-
-.message-form label {
-  flex-basis: 200px;
-}
-
-.message-form textarea {
- flex-basis: 200px;
+  mix-blend-mode: hard-light;
 }
 
 .resume {
@@ -318,15 +273,43 @@ main {
   display: flex; 
   flex-wrap: wrap; 
   justify-content: space-around;
+  align-items: center;
 }
 
-.resume a {
+/* .resume-link {
   text-decoration: none;
-  flex-basis: 100%;
+  flex-basis: 40%;
   padding: 20px;
   margin: 10px;
   border-radius: 2px;
   background-color: var(--lean-in);
+  color: var(--peach); 
+  cursor: pointer;
+} */
+
+.resume a button {
+  margin: auto;
+  font-family: 'Roboto'; 
+  font-size: 3em;
+  font-style: italic;
+  font-weight: bold;
+  flex-basis: 40%;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 1rem;
+  background-color: var(--lean-in);
+  color: var(--peach); 
+  mix-blend-mode: exclusion;
+  cursor: pointer;
+}
+
+
+.badge-link {
+  text-decoration: none;
+  flex-basis: 10%;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 2px;
   color: var(--peach); 
   cursor: pointer;
 }
@@ -517,9 +500,54 @@ code {
 }
 
 @media screen and (max-width: 768px) {
+ 
+  header {
+    max-width: 100vw;
+  }
+
+  header h2 { 
+    text-align: start; 
+    font-size: 2rem;
+  }
+
+  header div {
+    max-width: 100vw;
+  }
+  
+  header div .header-contacts {
+    margin: 2em;
+    position: static; 
+  }
+  
+  header div .header-contacts button {
+   margin: auto; 
+   padding: 1rem;  
+   background-color: transparent;
+   border: none;
+  }
+  
+  .header-contacts button a {
+    color: var(--peach);
+    mix-blend-mode:hard-light;
+  }
+
   nav {
-    justify-content: space-between; 
+    justify-content: space-around; 
     margin: 0;
+    max-width: 100vw;
+  }
+
+  .nav-button {
+    cursor: pointer; 
+    font-family: Roboto;
+    font-weight: bold;
+    margin: 1rem;
+    width: fit-content;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--peach); 
+    mix-blend-mode: hard-light;
   }
 
   .about-me {
@@ -595,17 +623,6 @@ code {
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-around;
-  }
-  
-  .resume a {
-    text-decoration: none;
-    flex-basis: 100%;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 2px;
-    background-color: var(--lean-in);
-    color: var(--peach); 
-    cursor: pointer;
   }
   
   .resume h1 {

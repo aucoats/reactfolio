@@ -24,9 +24,12 @@ function App() {
         ></Header>
       <About></About>
       <Projects></Projects>
-      <Contact></Contact>
       <Resume></Resume>
-      <Footer></Footer>
+      <Contact></Contact>
+
+      {/* 
+      Footer seems redundant for this current iteration 
+      <Footer></Footer> */}
 
 
 
