@@ -6,9 +6,9 @@
   --tangy: rgb(244, 157, 110);
 }
 
-@keyframes slideInFromRight {
+@keyframes slideInFromTop {
   0% {
-    transform: translateX(100%);
+    transform: translateY(-100%);
   }
   100% {
     transform: translateX(0);
@@ -73,7 +73,7 @@ header div .header-contacts button {
 }
 
 header h2 {
-  animation: 1s ease-out 0s 1 slideInFromRight;
+  animation: 1s ease-out 0s 1 slideInFromTop;
   font-family: 'Roboto'; 
   font-size: 3em;
   font-style: italic;
@@ -83,10 +83,11 @@ header h2 {
   color: var(--lean-in); 
 }
 
+/* commenting out for now because header looks cleaner without it 
 header h2 span {
-  color: white;
-  mix-blend-mode: difference;
-}
+  color: var(--lean-in);
+  mix-blend-mode: hue;
+} */
 
 header h3 {
   animation: 2s ease-out 0s 1 slideInFromRight;
@@ -105,21 +106,25 @@ header h3 span {
 
 footer {
   background-color: var(--peach);
-  margin: 0 100px;
+  mix-blend-mode: luminosity;
+  border-radius: 20px;
+  margin: 5rem auto;
   display: flex; 
-  padding: 50px; 
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; 
   text-align: center; 
+  color: black;
+  width: fit-content;
 }
 
 footer span {
-  display: flex; 
-  margin: auto; 
-  padding: 20px; 
+  font-style: italic;
+  color: var(--lean-in);
 }
 
 footer span a {
   text-decoration: none;
-  color: var(--lean-in);
   cursor: pointer;
 }
 
@@ -162,6 +167,7 @@ main {
 
 .about-me {
   background-color: var(--peach);
+  opacity: 90%;
   border-radius: 20px;
   text-align: center;
   margin: 0 100px;
@@ -182,6 +188,7 @@ main {
   margin: 5rem;
 }
 
+/* keeping the headers separate classes for future use */
 .projects-header {
   background-color: transparent; 
   text-align: center;
@@ -226,6 +233,7 @@ main {
 
 .projects {
   background-color: var(--peach);
+  opacity: 90%;
   border-radius: 20px;
   text-align: center;
   margin: 0 100px;
@@ -252,11 +260,23 @@ main {
 }
 
 .contact {
-  /* background-color: var(--peach); */
+  background-color: transparent;
   margin: 3rem;
   border-radius: 20px;
   display: flex; 
   justify-content: center;
+}
+
+.email-button {
+  width: 15rem;
+  height: 5rem;
+  cursor: pointer; 
+  font-family: Roboto;
+  font-weight: bold;
+  border: none; 
+  border-radius: 5px;
+  background-color: var(--peach); 
+  mix-blend-mode: hard-light;
 }
 
 .contact-buttons {
@@ -267,6 +287,7 @@ main {
 
 .resume {
   background-color: var(--peach);
+  opacity: 90%;
   border-radius: 20px;
   text-align: center;
   margin: 0 100px;
@@ -276,16 +297,6 @@ main {
   align-items: center;
 }
 
-/* .resume-link {
-  text-decoration: none;
-  flex-basis: 40%;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 2px;
-  background-color: var(--lean-in);
-  color: var(--peach); 
-  cursor: pointer;
-} */
 
 .resume a button {
   margin: auto;
@@ -441,21 +452,6 @@ code {
     margin: 2vw; 
     font-size: 2vw;
   }
-
-  .contact form {
-    display: flex; 
-    flex-direction: column; 
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .contact-buttons {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
 }
 
 @media screen and (max-width:980px) {
@@ -483,19 +479,6 @@ code {
     font-size: 3vw;
   }
 
-  .contact form {
-    display: flex; 
-    flex-direction: column; 
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .contact-buttons {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   
 }
 
@@ -538,17 +521,14 @@ code {
   }
 
   .nav-button {
-    cursor: pointer; 
-    font-family: Roboto;
-    font-weight: bold;
     margin: 1rem;
     width: fit-content;
-    height: 3rem;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--peach); 
-    mix-blend-mode: hard-light;
   }
+
+  .email-button {
+    opacity: 95%;
+  }
+
 
   .about-me {
     background-color: var(--peach);
@@ -562,6 +542,7 @@ code {
   .about-me p {
     font-size: medium; 
   }
+
   .about-me img {
     margin: auto;
     text-align: center;
@@ -569,62 +550,16 @@ code {
     max-height: 100px;
   }
 
-  footer {
-    font-size: x-small;
-    margin: 0;
-    background-color: var(--peach);
-    display: flex; 
-    padding: 25px; 
-    text-align: center; 
-  }
 
   .projects {
     margin: 0; 
   }
 
-  .contact {
-    background-color: var(--peach);
-    text-align: center;
-    margin: 0;
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-around;
-  }
-
-  .contact a {
-    text-decoration: none;
-    flex-basis: 100%;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 2px;
-    background-color: var(--lean-in);
-    color: var(--peach); 
-    cursor: pointer;
-  }
-
-  .contact form {
-    display: flex; 
-    flex-direction: column; 
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-
-  .contact-buttons {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  } 
-
   .resume {
-    background-color: var(--peach);
-    text-align: center;
-    margin: 0;
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-around;
+    margin: auto;
+    width: fit-content;
   }
-  
+
   .resume h1 {
     font-style: italic;
     font-weight: bold;

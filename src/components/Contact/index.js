@@ -7,13 +7,13 @@ function Contact() {
         <>
             <h1 id="contact" className='contact-header'>Contact Me</h1>
             <main className="contact">
-                <a className="button-wrapper nav-grow" href='mailto:austincoats72@gmail.com' class="bob-on-hover">
-                    <button className="nav-button nav-grow">Email me!</button>    
+                <a className="nav-grow" href='mailto:austincoats72@gmail.com'>
+                    <button className="email-button">Email me!</button>    
                 </a>
             </main>
             <div class="contact">
-                    <a className="button-wrapper nav-grow" href="https://github.com/aucoats" target="_blank" rel="noreferrer"><button className="nav-button nav-grow contact-buttons"><GitHubIcon sx={{ fontSize: 45 }} /></button></a>
-                    <a className="button-wrapper nav-grow" href="https://www.linkedin.com/in/aucoats" target="_blank" rel="noreferrer"><button className="nav-button nav-grow contact-buttons"><LinkedInIcon sx={{ fontSize: 45 }} /></button></a>
+                    <a className="" href="https://github.com/aucoats" target="_blank" rel="noreferrer"><button className="nav-button nav-grow contact-buttons"><GitHubIcon sx={{ fontSize: 45 }} /></button></a>
+                    <a className="" href="https://www.linkedin.com/in/aucoats" target="_blank" rel="noreferrer"><button className="nav-button nav-grow contact-buttons"><LinkedInIcon sx={{ fontSize: 45 }} /></button></a>
             </div>
             
                 {/* <form>
