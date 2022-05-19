@@ -56,7 +56,6 @@ function Projects() {
             
             <Card sx={{ maxWidth: 500, 
                 minWidth: 350,
-                flexBasis: 100,
                 marginY: '20px',
                 marginX: '70px' }} className="show">
                 <CardMedia
